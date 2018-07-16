@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="321.0" prefHeight="500.0" prefWidth="328.0">
+         <children>
+            <Label layoutX="68.0" layoutY="26.0" prefHeight="27.0" prefWidth="209.0" text="Schedule Appointment">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <DatePicker layoutX="64.0" layoutY="95.0" prefHeight="25.0" prefWidth="202.0" />
+            <Label layoutX="69.0" layoutY="66.0" prefHeight="17.0" prefWidth="191.0" text="Select a date for your appointment" />
+            <Spinner layoutX="81.0" layoutY="168.0" />
+            <Label layoutX="60.0" layoutY="140.0" prefHeight="17.0" prefWidth="191.0" text="Select a time for your appointment" />
+         </children>
+      </Pane>
+      <Pane layoutX="-7.0" prefHeight="500.0" prefWidth="328.0" />
+   </children>
+</AnchorPane>

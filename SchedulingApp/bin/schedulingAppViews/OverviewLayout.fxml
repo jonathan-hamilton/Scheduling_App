@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="557.0" prefWidth="291.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schedulingAppViews.OverviewController">
+   <children>
+      <Button fx:id="setApptButton" layoutX="35.0" layoutY="467.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#setAppointmentFired" prefHeight="25.0" prefWidth="100.0" text="Appointments" />
+      <Button fx:id="reportsButton" layoutX="148.0" layoutY="467.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#reportsFired" prefHeight="25.0" prefWidth="100.0" text="Reports" />
+      <TableView fx:id="table" layoutX="5.0" layoutY="1.0" prefHeight="318.0" prefWidth="282.0">
+        <columns>
+         	<TableColumn fx:id="cName" prefWidth="150.0" text="Name" />
+            <TableColumn fx:id="cPhone" minWidth="0.0" prefWidth="125.0" text="Phone" />
+        </columns>
+      </TableView>
+      <TextField fx:id="searchByName" layoutX="35.0" layoutY="330.0" prefHeight="25.0" prefWidth="207.0" promptText="search by name" />
+      <TextField fx:id="searchByPhone" layoutX="35.0" layoutY="366.0" prefHeight="25.0" prefWidth="207.0" promptText="search by phone" />
+      <Button fx:id="searchButton" layoutX="74.0" layoutY="398.0" mnemonicParsing="false" onAction="#searchFired" prefHeight="25.0" prefWidth="130.0" text="Search" />
+    <Button fx:id="enterNewButton" layoutX="35.0" layoutY="506.0" mnemonicParsing="false" onAction="#enterNewFired" prefHeight="26.0" prefWidth="100.0" text="Enter New" />
+      <Button fx:id="editButton" layoutX="148.0" layoutY="507.0" mnemonicParsing="false" onAction="#editFired" prefHeight="25.0" prefWidth="100.0" text="Edit" />
+      <Label layoutX="249.0" layoutY="334.0" text="or" />
+      <Label fx:id="errMsg" alignment="CENTER" contentDisplay="CENTER" layoutX="39.0" layoutY="435.0" prefHeight="17.0" prefWidth="200.0" textFill="#e82d2d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
